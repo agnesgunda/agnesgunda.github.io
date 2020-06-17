@@ -1,7 +1,8 @@
+
 body {
 	margin: 0;
 	margin-top: 50px;
-	font-family: sans-serif;
+	font-family: Aktiv Grotesk Hairline;
 }
 
 header {
@@ -11,7 +12,7 @@ header {
 	left: 0;
 	right: 0;
 	height: 50px;
-	background-color: #eee;
+	background-color: #a4c67d;
 }
 
 header * {
@@ -27,16 +28,29 @@ header li {
 	margin-left: 20px;
 }
 
-img[src="img/goosehead.jpg"] {
-	width: 300px;
-	border-radius: 50%;
-}
 
+img[src="img/logo_with_text.png"] {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	width: 300px;
+	/*border-radius: 50%;*/
+}
 section {
     height: 100vh;
-    border: 1px solid black;
+    border: 1px solid #a4c67d;
     display: flex;
     justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+section.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 60px;
+    padding-bottom: 50px;
     align-items: center;
     text-align: center;
     background-size: cover;
@@ -45,13 +59,54 @@ section {
     background-attachment: fixed;
 }
 
+section.work>div {
+	background-color: #a4c67d;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-align: none;
+	display: inline-block;
+	font-size: 32px;
+	font-family: Aktiv Grotesk Hairline;
+	margin: 4px 2px;
+	border-radius: 12px;
+	
+}
+section.contact>div {
+	background-color: #a4c67d;
+	border: none;
+	color: white;
+	padding: 20px;
+	text-align: center;
+	text-align: none;
+	display: inline-block;
+	font-size: 32px;
+	font-family: Aktiv Grotesk Hairline;
+	margin: 2px 2px;
+	border-radius: 12px;
+
+}
+
+a:link {
+	color: #ffff;
+	text-decoration: none;
+}
+a:visited {
+	color: solid black;
+	text-decoration: none;
+}
+a:hover {
+	color: hotpink;
+	text-decoration: none;
+}
 footer {
 	text-align: center;
 	padding: 50px;
 }
-#hero h1 {
+/*#hero h1 {
 	font-size: 3em;
-}
+}*/
 section h2 {
 	font-size: 2.5em;
 }
@@ -63,14 +118,13 @@ header a {
 	color: black;
 }
 
-#hero {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/field.jpg');
+.hero {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/flowers02.jpg);
 }
 
-#about {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/beach.jpg');
+.work {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/background02.png);
 }
 
-#contact {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url('https://codetheweb.blog/assets/img/posts/steps-to-creating-a-website/canyon.jpg');
-}
+.contact {
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/train.png); }

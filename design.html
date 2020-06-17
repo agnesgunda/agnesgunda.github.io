@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Design</title>
+        <link rel="stylesheet" href="design_style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+    </head>
+</style>
+ <body>
+       <header>
+          <img src="img/logo_no_background.png" class="profile-img">
+          <nav>
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </nav>
+       </header>
+    <main>
+      <div class="design">
+          <h1>Design</h1>
+      </div>
+       	<section class="nobull">
+       		<div class="info">
+       			<li>logos</li>
+       			<li>brand guidelines</li>
+       			<li>business cards</li>
+       			<li>monogram initials text logo</li>
+       			<li>vectorized logos from raster images</li>
+          </div>
+       	</section>
+        
+        <h2 style="text-align:center">Slideshow Gallery</h2>
+      
+<div style="max-width:1000px;min-width:250px;position:relative;margin:auto">
+<div class="container">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="img/design/Blue_dog02.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="img/design/Diamond.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="img/design/Lemonada.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="img/design/BrandG.png" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="img/design/BrandG02.png" style="width:100%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="img/design/BrandG03.png" style="width:100%">
+  </div>
+</div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="img/design/Blue_dog02.png" style="width:100%" onclick="currentSlide(1)" alt="Blue dog">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/design/Diamond.png" style="width:100%" onclick="currentSlide(2)" alt="Diamond">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/design/Lemonada.png" style="width:100%" onclick="currentSlide(3)" alt="Lemonada">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/design/BrandG.png" style="width:100%" onclick="currentSlide(4)" alt="Brand Guidelines">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="img/design/BrandG02.png" style="width:100%" onclick="currentSlide(5)" alt="Brand Guidelines">
+    </div>    
+    <div class="column">
+      <img class="demo cursor" src="img/design/BrandG03.png" style="width:100%" onclick="currentSlide(6)" alt="Brand Guidelines">
+    </div>
+  </div>
+</div>
+
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+
+</script>
+    
+</body>
+      </body>
+</html>
