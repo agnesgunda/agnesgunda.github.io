@@ -4,10 +4,6 @@ body, html {
 	font-family: Aktiv Grotesk Hairline;
 	
 }
-* {
-	box-sizing: border-box;
-}
-
 header {
 	display: flex;
 	position: fixed;
@@ -15,21 +11,55 @@ header {
 	left: 0;
 	right: 0;
 	height: 50px;
-	background-color: #a4c67d;
+	background-color: #d0c42a;
 	font-size: 20px;
 }
 
 header * {
-	display: inline;
 	height: 50px;
 }
 
-header ul {
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+div.topnav {
+	display: inline;
+	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 header li {
 	margin-left: 20px;
+	float: left;
+}
+.home {
+	display: block;
+	padding: 12px;
+}
+.contacts {
+	display: block;
+	padding: 12px;
+}
+.about {
+	display: block;
+	padding: 12px;
+}
+/*#a4c67d   green color #d43a30 red color  #d0c42a nice yellow*/
+.flag-img {
+	float: right;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	height: 50px;
+	padding: 0;
+	background-color: #d0c42a;
+	text-decoration: none;
+	overflow: hidden;
+	text-align: center;
+	font-family: Aktiv Grotesk Hairline;
 }
 
 .design {
@@ -44,7 +74,7 @@ header li {
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    font-family: Bello Script Pro;
+    font-family: Plexifont BV;
     font-size: 35px;
 
 }
@@ -70,6 +100,7 @@ a:link {
 	text-decoration: none;
 }
 a:hover {
+	background-color: #eee74e;
 	color: hotpink;
 	text-decoration: none;
 }
