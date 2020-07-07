@@ -2,11 +2,8 @@ body, html {
 	height: 100%;
 	margin: 0;
 	font-family: Aktiv Grotesk Hairline;
-	/*background-position: fixed;
-	background-color: #edd95f;*/
-	
 }
-
+	
 header {
 	display: flex;
 	position: fixed;
@@ -19,6 +16,7 @@ header {
 }
 
 header * {
+	
 	height: 50px;
 }
 @media screen and (max-width: 600px) {
@@ -63,7 +61,8 @@ ul {
 	text-align: center;
 	font-family: Aktiv Grotesk Hairline;
 }
-.photography {
+
+.personal {
 	display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -77,8 +76,8 @@ ul {
     background-attachment: fixed;
     font-family: Plexifont BV;
     font-size: 35px;
-}
 
+}
 .nobull {
 	list-style-type: none;
 }
@@ -161,7 +160,7 @@ img {
 }
 .column {
 	float: left;
-	width: 16.66%;
+	width: 16.6%;
 }
 .demo {
 	opacity: 0.6;

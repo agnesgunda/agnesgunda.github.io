@@ -1,10 +1,9 @@
-
-body {
+body, html {
+	height: 100%;
 	margin: 0;
-	margin-top: 50px;
 	font-family: Aktiv Grotesk Hairline;
 }
-
+	
 header {
 	display: flex;
 	position: fixed;
@@ -12,22 +11,74 @@ header {
 	left: 0;
 	right: 0;
 	height: 50px;
-	background-color: #a4c67d;
+	background-color: #d7b98c;
+	font-size: 20px;
 }
 
 header * {
-	display: inline;
+	
 	height: 50px;
 }
-
-header ul {
+@media screen and (max-width: 600px) {
+  ul.topnav li.right, 
+  ul.topnav li {float: none;}
+}
+div.topnav {
+	display: inline;
+	margin: 0;
 	padding: 0;
+	overflow: hidden;
 }
 
 header li {
 	margin-left: 20px;
+	float: left;
 }
 
+.topnav {
+	margin-left: 20px;
+	float: left;
+	list-style-type: none;
+	height: 50px;
+	padding: 0;
+	background-color: #d7b98c;
+	text-decoration: none;
+	overflow: hidden;
+	text-align: center;
+	font-family: Aktiv Grotesk Hairline;
+}
+.home {
+	display: block;
+	padding: 12px;
+}
+.contacts {
+	display: block;
+	padding: 12px;
+
+}
+
+.about {
+	display: block;
+	padding: 12px;
+}
+/*#a4c67d   green color #d43a30 red color  #d0c42a nice yellow #eee74e normal yellow*/
+.flag-img {
+	float: right;
+}
+.enflag-img {
+	float: right;
+}
+ul {
+	list-style-type: none;
+	margin: 0;
+	height: 50px;
+	padding: 0;
+	background-color: #d7b98c;
+	text-decoration: none;
+	overflow: hidden;
+	text-align: center;
+	font-family: Aktiv Grotesk Hairline;
+}
 
 img[src="img/logo_with_text.png"] {
 	display: block;
@@ -37,6 +88,10 @@ img[src="img/logo_with_text.png"] {
 	/*border-radius: 50%;*/
 }
 section {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
     height: 100vh;
     border: 1px solid #a4c67d;
     display: flex;
@@ -63,7 +118,8 @@ section.work>div {
 	background-color: #a4c67d;
 	border: none;
 	color: white;
-	padding: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
 	text-align: center;
 	text-align: none;
 	display: inline-block;
@@ -73,30 +129,17 @@ section.work>div {
 	border-radius: 12px;
 	
 }
-section.contact>div {
-	background-color: #a4c67d;
-	border: none;
-	color: white;
-	padding: 20px;
-	text-align: center;
-	text-align: none;
-	display: inline-block;
-	font-size: 32px;
-	font-family: Aktiv Grotesk Hairline;
-	margin: 2px 2px;
-	border-radius: 12px;
-
-}
 
 a:link {
-	color: #ffff;
-	text-decoration: none;
-}
-a:visited {
 	color: solid black;
 	text-decoration: none;
 }
+a:visited {
+	color: #d43a30 ;
+	text-decoration: none;
+}
 a:hover {
+	background-color: #eee74e; 
 	color: hotpink;
 	text-decoration: none;
 }
@@ -104,27 +147,24 @@ footer {
 	text-align: center;
 	padding: 50px;
 }
-/*#hero h1 {
+#hero h1 {
 	font-size: 3em;
-}*/
+}
 section h2 {
 	font-size: 2.5em;
 }
 section h3 {
 	font-size: 1.5em;
 }
-header a {
-	text-decoration: none;
-	color: black;
-}
+
 
 .hero {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/flowers02.jpg);
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/Background0102.png);
 }
 
 .work {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/background02.png);
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/BackgroundPp.png);
 }
 
 .contact {
-    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/train.png); }
+    background-image: linear-gradient(rgba(255,255,255,0.75),rgba(255,255,255,0.75)), url(img/background02.png); }
