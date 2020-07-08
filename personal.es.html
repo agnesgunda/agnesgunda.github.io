@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Photography</title>
-        <link rel="stylesheet" href="photography_style.css">
+        <title>Personal_project</title>
+        <link rel="stylesheet" href="personal_style.css">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
     </head>
 </style>
  <body>
-        <header>
+       <header>
         <!--  <img src="img/logonobackground.png" class="profile-img">
             <nav>
             <ul>
@@ -19,60 +19,63 @@
           <div class="topnav">
            <ul>
             <li><a href="logo.asp"><img src="img/logonobackground.png" class="logo-img"></a></li>
-            <li><a href="index.html" class="home">Home</a></li>
-            <li><a href="contact.asp" class="contacts">Contact</a></li>
-            <li><a href="about.asp" class="about">About</a></li>
-            <li><a href="photography.es.html"><img src="img/BolivianSpanishFlag.png" class="flag-img"></a></li>
+            <li><a href="es.html" class="home">Inicio</a></li>
+            <li><a href="contact.html" class="contacts">Contacto</a></li>
+            <li><a href="about.asp" class="about">Acerca de</a></li>
+            <li><a href="personal.html"><img src="img/EnglishFlag.png" class="enflag-img"></a></li>
           </ul>
         </div>
        </header>
     <main>
-      <div class="photography">
-          <h1>Photography</h1>
+      <div class="personal">
+          <h1>Projectos personales</h1>
       </div>
-        <section class="nobull">
-          <div class="info">
-              <li>interior</li>
-              <li>nature</li>
-              <li>events</li>
-              <li>landscape</li>
+       	<section class="nobull">
+       		<div class="info">
+       			<li>logotipos</li>
+       			<li>posters</li>
+       			<li>manipulación de imágenes</li>
+       			<li>folleto</li>
+       			<li>identidad de marca</li>
           </div>
-        </section>
-        <h2 style="text-align:center">Slideshow Gallery</h2>
-
+       	</section>
+        
+        <h2 style="text-align:center">Galería de diapositivas</h2>
+      
 <div style="max-width:1000px;min-width:250px;position:relative;margin:auto">
 <div class="container">
   <div class="mySlides">
     <div class="numbertext">1 / 6</div>
-    <img src="img/interior01.png" style="width:100%">
+    <img src="img/TitanicMuseum.png" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">2 / 6</div>
-    <img src="img/interior02.png" style="width:100%">
+    <img src="img/wall.png" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">3 / 6</div>
-    <img src="img/flowers02.jpg" style="width:100%">
+    <img src="img/A3Poster.png" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">4 / 6</div>
-    <img src="img/sky01.png" style="width:100%">
+    <img src="img/bookCover.png" style="width:100%">
   </div>
 
   <div class="mySlides">
     <div class="numbertext">5 / 6</div>
-    <img src="img/sevilla.png" style="width:100%">
+    <img src="img/page02.jpg" style="width:100%">
   </div>
     
   <div class="mySlides">
     <div class="numbertext">6 / 6</div>
-    <img src="img/Statue.png" style="width:100%">
+    <img src="img/pageBlack.jpg" style="width:100%">
   </div>
 </div>
     
+
   <a class="prev" onclick="plusSlides(-1)">❮</a>
   <a class="next" onclick="plusSlides(1)">❯</a>
 
@@ -82,27 +85,30 @@
 
   <div class="row">
     <div class="column">
-      <img class="demo cursor" src="img/interior01.png" style="width:100%" onclick="currentSlide(1)" alt="Interior">
+      <img class="demo cursor" src="img/TitanicMuseum.png" style="width:100%" onclick="currentSlide(1)" alt="Belfast">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/interior02.png" style="width:100%" onclick="currentSlide(2)" alt="Interior">
+      <img class="demo cursor" src="img/wall.png" style="width:100%" onclick="currentSlide(2)" alt="Pared">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/flowers02.jpg" style="width:100%" onclick="currentSlide(3)" alt="Flowers">
+      <img class="demo cursor" src="img/A3Poster.png" style="width:100%" onclick="currentSlide(3)" alt="Poster">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/sky01.png" style="width:100%" onclick="currentSlide(4)" alt="Sky">
+      <img class="demo cursor" src="img/bookCover.png" style="width:100%" onclick="currentSlide(4)" alt="Cubierta de folleto">
     </div>
     <div class="column">
-      <img class="demo cursor" src="img/sevilla.png" style="width:100%" onclick="currentSlide(5)" alt="Sevilla">
+      <img class="demo cursor" src="img/page02.jpg" style="width:100%" onclick="currentSlide(5)" alt="Páginas ineriores">
     </div>    
     <div class="column">
-      <img class="demo cursor" src="img/Statue.png" style="width:100%" onclick="currentSlide(6)" alt="Sculpture">
+      <img class="demo cursor" src="img/pageBlack.jpg" style="width:100%" onclick="currentSlide(6)" alt="Páginas ineriores">
     </div>
   </div>
 </div>
 
+
+
 <script>
+
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -131,6 +137,11 @@ function showSlides(n) {
   dots[slideIndex-1].className += " active";
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
+</script>
+</main>
+</body>
+</html>
+
 </script>
     
 </body>
